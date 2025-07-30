@@ -22,6 +22,7 @@ public class FileSystem {
             }
 
             current=((Directory) current).children.get(part);
+//            System.out.println(current);
 
             if(current==null) return null;
 
@@ -109,7 +110,7 @@ public class FileSystem {
         FileSystemNode parentNode=travers(dirPath);
         if(parentNode==null || !parentNode.isDirectory()) return false;
         Directory parentDir=(Directory) parentNode;
-//        if(!parentDir.children.containsKey(name)){return false;}
+        if(!parentDir.children.containsKey(name)){return false;}
 
         FileSystemNode node=parentDir.children.remove(name);
         if(node==null) return false;
