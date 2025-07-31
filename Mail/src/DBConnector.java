@@ -8,7 +8,7 @@ public class DBConnector {
             Class.forName("com.mysql.cj.jdbc.Driver");
 
             Connection connection = DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/zoho_email_db", "root", "Shakthi*19"
+                    "jdbc:mysql://localhost:3306/zoho_email_db", "root", "*******"
             );
 //            Statement statement = connection.createStatement();
 
